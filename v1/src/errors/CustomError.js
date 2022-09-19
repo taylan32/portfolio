@@ -1,8 +1,7 @@
 const CustomError = (message, status) => {
     const error = new Error()
-    error.message = message || "Unhandled error occurred"
-    error.status = status || 500
+    error.message = message
+    error.status = status
     return error
 }
-
 module.exports = CustomError
